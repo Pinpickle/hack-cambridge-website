@@ -136,7 +136,7 @@ exports.createApplicationForm = function createApplicationForm(validateFile = tr
     student_status: fields.boolean({
       label: 'Please confirm your student status:',
       note: '',
-      widget: checkboxWidget('I am currently a student or I graduated after January 28th 2016.'),
+      widget: checkboxWidget('I am currently a student or I graduated after January 28th 2015.'),
       required: validators.matchValue(() => true, 'You must confirm your student status to apply.'),
       cssClasses,
     }),
